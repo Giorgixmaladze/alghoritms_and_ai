@@ -1,0 +1,68 @@
+ფსევდოკოდი:
+Func count_capital_letters(text)
+    Count = 0
+    For char in text:
+        If A <= char <= Z:
+             count += 1
+    end for
+    Return count
+end function
+
+ეს ფუნქცია ამოწმებს არის თუ არა ტექსტში A დან Z ს შორის არსებული ასოები და თუ არის დაითვლის მოცემულ ასოებს და ეს მოხდება იტერაციის საშუალებით.
+
+ Best case ს შემთხვევაში შესაძლოა ტექსტს არ ჰქონდეს დიდი ასოები ამ შემთხვევაში ფუნქციის მიხედვით მატება არ მოხდება ხოლო wors case ს შემთხვევაში შესაძლოა ყველა ასო დიდი იყოს რაც გამოიწვევს მატებას N რაოდენობით.
+
+
+
+
+ფსევდოკოდი: Function calculate_average(filename):
+    Declare sum,count,number
+    Initialize sum,count
+    Open filename for read
+    While Not End of file (filename) do read number from filename 
+    If number is not invalid:
+        Sum = sum + number
+        Count = count + 1
+    End if
+    End while
+   Close filename
+   If count > 0 then:
+        Average = sum \ count
+        Return average 
+    Else:
+    Return "file is empty"
+    End if 
+End function
+ეს ალგორითმი ასრულებს შემდეგ ოპერაციებს:
+ცვლადის ინიციალიზაცია 3ჯერ : count,sum,number
+ფაილის ოპერაციები(გახსნა,წაკითხვა,დახურვა):
+3ჯერ
+მინიჭება მოხდა 3ჯერ 
+მიმატება,გაყოფა 3ჯერ
+შემოწმებები 2ჯერ
+
+
+
+
+
+
+Function all_distinct(x, y, z):
+ვამოწმებთ არის თუარა რომელიმე რიცხვი განსხვავებული ამ სამი შემოტანილი რიცხვიდან
+    If x == y:
+    თუ x = y ვაბრუნებთ booleanს falseს რადგან ისინი არ არიან განსხვავებული რიცხვები
+        Return false
+
+          აქ ვადარებთ x ს და zს თუ ისინიც ტოლი რიცხვები აღმოჩნდნენ ვაბრუნებთ falseს
+         Elif x == z:
+         Return false 
+სხვა შემთხვევაში კი ბრუნდება true
+    Return True
+
+
+Worst case იქნება იმ შემთხვევაში თუ ყველა რიცხვი ტოლი იქნება ერთმანეთის იქნება 2 შედარება
+
+
+
+
+
+
